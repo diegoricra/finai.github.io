@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EEE;
+}
+
+header .logo {
+    width: 120px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-right: 16px;
+}
+
+header nav ul li a, .cta-button {
+    text-decoration: none;
+    color: #0057D8;
+    font-weight: 700;
+}
+
+.hero {
+    text-align: center;
+    padding: 32px 16px;
+    background-color: #F5F5F5;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #0057D8;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.features, .testimonials, .pricing, .faq {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.features h2, .testimonials h2, .pricing h2, .faq h2 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.feature-blocks, .testimonial-cards, .plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+.feature, .testimonial, .plan {
+    width: 30%;
+    padding: 16px;
+    border: 1px solid #EEE;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.plan.featured {
+    border: 2px solid #00C49F;
+    box-shadow: 0px 4px 12px rgba(0, 196, 159, 0.2);
+}
+
+.cta-button {
+    background-color: #0057D8;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 16px; /* Añadido margen superior */
+}
+
+.cta-button.secondary {
+    background-color: #00C49F;
+    margin-top: 16px; /* Añadido margen superior */
+}
+
+footer {
+    padding: 16px 32px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
