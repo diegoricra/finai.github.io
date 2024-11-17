@@ -1,3 +1,4 @@
+/* Estilos base */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,9 +11,10 @@ body {
     background-color: #FFFFFF;
 }
 
+/* Header actualizado */
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 16px 32px;
     background-color: #FFFFFF;
@@ -20,28 +22,63 @@ header {
 }
 
 header .logo {
-    width: 120px;
+    width: 80px;
+    margin-bottom: 8px;
 }
 
 header nav ul {
     display: flex;
     list-style-type: none;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
 }
 
 header nav ul li {
     margin-right: 16px;
 }
 
-header nav ul li a, .cta-button {
+header nav ul li a {
     text-decoration: none;
     color: #0057D8;
     font-weight: 700;
 }
 
+header .cta-button {
+    background-color: #0057D8;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 32px 16px;
     background-color: #F5F5F5;
+}
+
+.hero .cta-button.secondary {
+    background-color: #00C49F;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto 16px auto;
 }
 
 .hero h1 {
@@ -55,6 +92,13 @@ header nav ul li a, .cta-button {
     margin-bottom: 16px;
 }
 
+.hero img {
+    display: block;
+    margin: 16px auto;
+    max-width: 100%;
+}
+
+/* Features Section */
 .features, .testimonials, .pricing, .faq {
     padding: 32px 16px;
     text-align: center;
@@ -80,26 +124,115 @@ header nav ul li a, .cta-button {
     background-color: #FFFFFF;
 }
 
+.cta-button.primary {
+    background-color: #0057D8;
+    color: #FFFFFF;
+    padding: 10px 20px; 
+    border-radius: 8px;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.cta-button.secondary {
+    background-color: #00C49F;
+}
+
 .plan.featured {
     border: 2px solid #00C49F;
     box-shadow: 0px 4px 12px rgba(0, 196, 159, 0.2);
 }
 
-.cta-button {
+#registro-formulario {
+    background-color: #F5F5F5;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+#registro-formulario h2 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+#registro-formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#registro-formulario label {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 100%;
+}
+
+#registro-formulario input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #EEE;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#registro-formulario button {
     background-color: #0057D8;
     color: #FFFFFF;
-    padding: 8px 16px;
+    padding: 12px 20px;
     border-radius: 8px;
-    margin-top: 16px; /* Añadido margen superior */
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.cta-button.secondary {
-    background-color: #00C49F;
-    margin-top: 16px; /* Añadido margen superior */
-}
-
+/* Footer */
 footer {
     padding: 16px 32px;
     background-color: #F5F5F5;
     text-align: center;
 }
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+footer .social-media {
+    margin-top: 16px;
+}
+
+footer .social-media a {
+    margin-right: 8px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+footer .newsletter button {
+    background-color: #0057D8;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+
