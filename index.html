@@ -8,34 +8,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Header -->
     <header>
         <div class="container">
             <img src="Imagenes/logo.png" alt="FinAI Logo" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Características</a></li>
-                    <li><a href="#">Precios</a></li>
-                    <li><a href="#">Testimonios</a></li>
-                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#soporte">Soporte</a></li>
                 </ul>
             </nav>
-            <a href="#" class="cta-button primary">Empieza Gratis</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="inicio" class="hero">
         <h1>Gestiona tus finanzas de forma inteligente con FinAI</h1>
         <p>Tu camino hacia la libertad financiera.</p>
-        <a href="#" class="cta-button secondary">Regístrate Gratis</a>
+        <a href="#registro-formulario" class="cta-button secondary">Regístrate Gratis</a>
         <img src="Imagenes/app-preview.png" alt="FinAI App Preview">
     </section>
 
     <!-- Features Section -->
-    <section class="features">
+    <section id="caracteristicas" class="features">
         <h2>Características que Facilitan tus Finanzas</h2>
         <div class="feature-blocks">
             <div class="feature">
@@ -58,7 +56,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section id="testimonios" class="testimonials">
         <h2>Lo Que Dicen Nuestros Usuarios</h2>
         <div class="testimonial-cards">
             <div class="testimonial">
@@ -79,8 +77,8 @@
         </div>
     </section>
 
-    <!-- Pricing Section (Updated) -->
-    <section class="pricing">
+    <!-- Pricing Section -->
+    <section id="precios" class="pricing">
         <h2>Planes para Cada Necesidad</h2>
         <div class="plans">
             <div class="plan">
@@ -99,7 +97,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
+    <section id="soporte" class="faq">
         <h2>Preguntas Frecuentes</h2>
         <div class="faq-item">
             <h3>¿Cómo puedo registrarme?</h3>
@@ -109,6 +107,23 @@
             <h3>¿Es seguro mi dinero con FinAI?</h3>
             <p>Absolutamente. Utilizamos tecnología avanzada de encriptación para proteger tus datos financieros.</p>
         </div>
+    </section>
+
+    <!-- Registro Section -->
+    <section id="registro-formulario">
+        <h2>Formulario de Registro</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+
+            <a href="dashboard.html" class="cta-button primary">Registrarme</a>
+        </form>
     </section>
 
     <!-- Footer -->
@@ -131,5 +146,6 @@
     </footer>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
